@@ -16,11 +16,10 @@
 
     const image = new Image();
 
-    image.onload = function () {
+    image.onload = () => {
       console.log('Loaded Image! ;-P')
-
-
-
+      let savedImage = c.toDataURL()
+      window.open(savedImage)
     }
 
     image.src = 'duck-example.png';
