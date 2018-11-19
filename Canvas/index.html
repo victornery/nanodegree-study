@@ -14,21 +14,15 @@
     const c = document.querySelector('#test')
     const ctx = c.getContext("2d")
 
-    ctx.strokeStyle = "#33CC33"
+    ctx.font = "36px Impact"
+    ctx.textAlign = "center"
 
-    ctx.scale(2, 2)
+    ctx.fillStyle = "white"
+    ctx.fillText("TEST A TEXT!", c.width / 2, 40)
 
-    ctx.strokeRect(50, 50, 100, 100)
-
-    ctx.beginPath()
-
-    ctx.moveTo(75, 75)
-    ctx.lineTo(125, 125)
-    ctx.lineTo(125, 75)
-
-    ctx.fill()
-    ctx.fillStyle = "black"
-    ctx.fillText("Hello Udacity", 50, 10)
+    ctx.strokeStyle = "black"
+    ctx.lineWidth = 3
+    ctx.strokeText("TEST A TEXT!", c.width / 2, 40)
 
   </script>
 </body>
