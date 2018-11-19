@@ -17,18 +17,18 @@
 
     // A disposição é simples. Sempre serão aceitos 4 parâmetros que são: 
     // (x, y, w, h). Ex.: ctx.fillRect(0,0,100,100)
-    ctx.scale(2, 2)
-    ctx.translate(0, 0)
 
-    ctx.strokeRect(50, 50, 100, 100)
+    ctx.fillStyle = "blue"
+    ctx.fillRect(0, 0, 50, 50)
+    ctx.save()
 
+    ctx.fillStyle = "green"
+    ctx.fillRect(0, 75, 50, 50)
 
-    ctx.beginPath()
-    ctx.moveTo(75, 75)
-    ctx.lineTo(125, 125)
-    ctx.lineTo(125, 75)
+    ctx.restore()
 
-    ctx.fill()
+    ctx.fillRect(0, 125, 20, 20)
+
 
 
   </script>
